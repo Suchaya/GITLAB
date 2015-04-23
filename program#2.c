@@ -19,14 +19,14 @@ int main()
 	memset(stringInput,0,sizeof(stringInput));
 
 	/* Calculate average of quizzes */
-	for (quiz = 1; quiz <=7; quiz++)
+	for (quiz = 1; quiz <= 10; quiz++)
 		{
 		printf("Enter score for quiz number %d: ", quiz);
 		fgets(stringInput,120, stdin);
 		sscanf(stringInput,"%d",&quizScore);
 		totalScores = totalScores + quizScore;
 		}
-	averageScore = totalScores/7;
+	averageScore = totalScores/10;
 
 	/* Get the midterm exam score */
 	printf("Enter midterm exam score: ");
