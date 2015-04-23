@@ -39,9 +39,9 @@ int main()
 	sscanf(stringInput,"%d",&finalScore);
 
 	/* Calculate grade */
-	grade = averageScore * 0.25 + midScore * 0.25 + finalScore * 0.5;
+	grade = averageScore * 0.5 + midScore * 0.5 + finalScore * 0.75;
 	printf("Your grade is %d\n",grade);
-	if (grade < 60)
+	if (grade < 50)
 	printf("Sorry, you've failed the course.\n");
 else
 	printf("Congratulation! You passed the course.\n");
