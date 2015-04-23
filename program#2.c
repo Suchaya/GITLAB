@@ -19,6 +19,7 @@ int main()
 	memset(stringInput,0,sizeof(stringInput));
 
 	/* Calculate average of quizzes */
+
 	for (quiz = 1; quiz <=10; quiz++)
 		{
 		printf("Enter score for quiz number %d: ", quiz);
