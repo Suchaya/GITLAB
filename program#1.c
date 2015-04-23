@@ -9,8 +9,8 @@
 int main()
 	{
 	char stringInput[128];
-	int totalScores = 0;
-	int quizScore = 0;
+	int total = 0;
+	int quiz = 0;
 	int midScore = 0;
 	int finalScore = 0;
 	int averageScore = 0;
@@ -23,10 +23,10 @@ int main()
 		{
 		printf("Enter score for quiz number %d: ", quiz);
 		fgets(stringInput,128, stdin);
-		sscanf(stringInput,"%d",&quizScore);
-		totalScores = totalScores + quizScore;
+		sscanf(stringInput,"%d",&quiz);
+		total = total + quiz;
 		}
-	averageScore = totalScores/10;
+	averageScore = total/10;
 
 	/* Get the midterm exam score */
 	printf("Enter midterm exam score: ");
